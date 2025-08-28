@@ -42,7 +42,7 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-/* @import '@ionic/angular/css/palettes/dark.system.css'; */
+@import '@ionic/angular/css/palettes/dark.system.css';
 
 /* Custom Theme Variables */
 :root {
@@ -53,14 +53,14 @@
   --ion-color-primary-contrast-rgb: 255,255,255;
   --ion-color-primary-shade: #575ad4;
   --ion-color-primary-tint: #7375f2;
-  
+
   --ion-color-secondary: #10b981;
   --ion-color-secondary-rgb: 16,185,129;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255,255,255;
   --ion-color-secondary-shade: #0ea271;
   --ion-color-secondary-tint: #28c08e;
-  
+
   --ion-color-tertiary: #a78bfa;
   --ion-color-success: #22c55e;
   --ion-color-warning: #f59e0b;
@@ -84,11 +84,11 @@
   --color-muted: 100 116 139;   /* slate-500 */
   --color-card: 241 245 249;    /* slate-100 */
   --ring: 99 102 241;           /* brand-500 */
-  
+
   /* Custom shadow for light mode */
   --box-shadow-light: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   --box-shadow-medium: 0 4px 6px rgba(0,0,0,0.1);
-  
+
   /* Ionic color steps for light mode */
   --ion-color-step-50: #f8f9fa;
   --ion-color-step-100: #f1f3f5;
@@ -122,7 +122,7 @@ body.dark,
   --ion-color-primary-rgb: 129,140,248;
   --ion-color-primary-shade: #7179db;
   --ion-color-primary-tint: #8e98f9;
-  
+
   --ion-background-color: #0b1220 !important; /* deep blue-black */
   --ion-background-color-rgb: 11,18,32 !important;
   --ion-text-color: #e2e8f0 !important;
@@ -140,11 +140,11 @@ body.dark,
   --color-muted: 148 163 184; /* slate-400 */
   --color-card: 24 32 48;
   --ring: 129 140 248;        /* brand-400/500 */
-  
+
   /* Custom shadow for dark mode */
   --box-shadow-light: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.5);
   --box-shadow-medium: 0 4px 6px rgba(0,0,0,0.3);
-  
+
   /* Ionic color steps for dark mode */
   --ion-color-step-50: #0b0c0d;
   --ion-color-step-100: #121416;
@@ -189,12 +189,12 @@ ion-chip {
   --background: var(--ion-color-step-100);
   cursor: pointer;
   transition: all 0.2s ease;
-  
+
   &:hover {
     --background: var(--ion-color-step-150);
     transform: translateY(-1px);
   }
-  
+
   &:active {
     transform: scale(0.98);
   }
@@ -204,25 +204,25 @@ ion-chip {
 ion-modal.book-detail-modal {
   --border-radius: 16px 16px 0 0;
   --background: var(--ion-background-color);
-  
+
   ion-header {
     ion-toolbar {
       --background: var(--ion-toolbar-background, var(--ion-background-color));
       --color: var(--ion-text-color);
       --border-width: 0;
       padding-top: 6px;
-      
+
       ion-title {
         font-size: 1.1rem;
         font-weight: 600;
       }
     }
   }
-  
+
   ion-content {
     --background: var(--ion-background-color);
   }
-  
+
   .modal-handle {
     width: 36px;
     height: 5px;
@@ -238,7 +238,7 @@ body.dark ion-modal.book-detail-modal {
     --background: rgb(17 24 39);
     --color: #e2e8f0;
   }
-  
+
   .book-header {
     background: rgb(24 32 48);
     border-bottom-color: rgb(30 41 59);
@@ -249,12 +249,12 @@ body.dark ion-modal.book-detail-modal {
 ion-modal.server-settings-modal {
   --border-radius: 16px 16px 0 0;
   --background: var(--ion-background-color);
-  
+
   ion-header ion-toolbar {
     --background: var(--ion-toolbar-background, var(--ion-background-color));
     --border-width: 0;
   }
-  
+
   ion-content {
     --background: var(--ion-background-color);
   }
@@ -267,7 +267,7 @@ ion-input[type="password"] input {
   background: var(--ion-item-background, transparent) !important;
   border: none !important;
   outline: none !important;
-  
+
   /* Override browser autofill styles */
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
@@ -486,19 +486,19 @@ ion-loading {
 ion-alert {
   --background: var(--ion-background-color);
   --max-width: 280px;
-  
+
   .alert-wrapper {
     background: var(--ion-background-color);
   }
-  
+
   .alert-head {
     color: var(--ion-text-color);
   }
-  
+
   .alert-message {
     color: var(--ion-text-color);
   }
-  
+
   .alert-button {
     color: var(--ion-color-primary);
   }

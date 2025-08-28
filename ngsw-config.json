@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
   "appData": {
-    "version": "1.1.12",
+    "version": "1.1.13",
     "description": "Booklett PWA"
   },
   "assetGroups": [
